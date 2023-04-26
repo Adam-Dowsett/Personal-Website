@@ -1,10 +1,4 @@
-import { getProjects } from "@/sanity/sanity-utils";
-import Image from "next/image";
-import Link from "next/link";
-
 export default async function Home() {
-  const projects = await getProjects();
-
   return (
     <div>
       <h1 className="text-7xl font-extrabold text-center">
