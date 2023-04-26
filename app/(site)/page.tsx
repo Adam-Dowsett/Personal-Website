@@ -15,11 +15,11 @@ export default async function Home() {
         !
       </h1>
       <p className="mt-3 text-xl dark:text-gray-400 light:text-gray-700">
-        Greetings and welcome to my website! I'm excited to share my projects
-        with you and hope you'll find them interesting and inspiring. If you
-        have any questions or would like to collaborate, please feel free to
-        connect with me on LinkedIn or Github using the links below. Thanks for
-        stopping by!
+        Greetings and welcome to my website! I&apos;m excited to share my
+        projects with you and hope you&apos;ll find them interesting and
+        inspiring. If you have any questions or would like to collaborate,
+        please feel free to connect with me on LinkedIn or Github using the
+        links below. Thanks for stopping by!
       </p>
       <h2 className="mt-8 font-bold dark:text-gray-400 light:text-gray-700 text-3xl">
         My Projects:
