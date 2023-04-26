@@ -13,10 +13,10 @@ export default async function Home() {
         </span>
       </h1>
       <p className="mt-6 text-xl dark:text-gray-400 light:text-gray-700">
-        Hi, I&apos;m Adam. I&apos;m a software engineer and web developer. I
-        went to the University of Warwick and studied systems engineering, I
-        then went on to complete a software development course with La Fosse
-        Academy formerly known as Future Proof.
+        Hi, I'm Adam. I'm a software engineer and web developer. I went to the
+        University of Warwick and studied systems engineering, I then went on to
+        complete a software development course with La Fosse Academy formerly
+        known as Future Proof.
       </p>
       <p className="mt-3 text-xl dark:text-gray-400 light:text-gray-700">
         I have completed a number of projects using a variety of technologies
@@ -26,7 +26,7 @@ export default async function Home() {
       <p className="mt-3 text-xl dark:text-gray-400 light:text-gray-700">
         Outside of coding, I enjoy playing video games and going to the gym. I
         am big on tv shows and anime and will binge watch a series in a day if
-        I&apos;m not careful.
+        I'm not careful.
       </p>
       <p className="mt-3 text-xl dark:text-gray-400 light:text-gray-700">
         I am currently looking for a role as a software engineer or web Dev. If
