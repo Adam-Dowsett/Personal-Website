@@ -34,7 +34,7 @@ export default async function RootLayout({
         </header>
         <main className="py-10">{children}</main>
         <footer className="flex items-center justify-around gap-5 text-sm dark:text-gray-300 light:text-gray-600 mt-auto">
-          <Link
+          <a
             href="https://www.linkedin.com/in/adam-dowsett-94514b241/"
             className="transition duration-300 transform hover:scale-110"
           >
@@ -44,13 +44,13 @@ export default async function RootLayout({
               width={50}
               height={50}
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://github.com/Adam-Dowsett"
             className="transition duration-300 transform hover:scale-110"
           >
             <Image src="/github.png" alt="github" width={50} height={50} />
-          </Link>
+          </a>
         </footer>
       </body>
     </html>
