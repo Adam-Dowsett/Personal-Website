@@ -1,6 +1,8 @@
 import Link from "next/link";
 import "../globals.css";
 import { getPages } from "@/sanity/sanity-utils";
+import Image from "next/image";
+import { ThemeProvider } from "next-themes";
 
 export const metadata = {
   title: "My Personal Website",
@@ -15,8 +17,8 @@ export default async function RootLayout({
   const pages = await getPages();
 
   return (
-    <html lang="en">
-      <body className="max-w-3xl mx-auto py-10">
+    <html lang="en" className="h-screen">
+      <body className="max-w-3xl mx-auto py-10 flex flex-col min-h-screen">
         <header className="flex items-center justify-between">
           <Link
             href="/"
@@ -24,19 +26,32 @@ export default async function RootLayout({
           >
             Home
           </Link>
-          <div className="flex items-center gap-5 text-sm text-gray-300">
-            {pages.map((page) => (
-              <Link
-                key={page._id}
-                href={`/${page.slug}`}
-                className="hover:underline"
-              >
-                {page.title}
-              </Link>
-            ))}
+          <div className="flex items-center gap-5 text-sm dark:text-gray-200 light:text-gray-600">
+            <Link href="/about" className="hover:underline">
+              About
+            </Link>
           </div>
         </header>
         <main className="py-10">{children}</main>
+        <footer className="flex items-center justify-around gap-5 text-sm dark:text-gray-300 light:text-gray-600 mt-auto">
+          <Link
+            href="https://www.linkedin.com/in/adam-dowsett-94514b241/"
+            className="transition duration-300 transform hover:scale-110"
+          >
+            <Image
+              src="/linkedinblue.png"
+              alt="linkedin"
+              width={50}
+              height={50}
+            />
+          </Link>
+          <Link
+            href="https://github.com/Adam-Dowsett"
+            className="transition duration-300 transform hover:scale-110"
+          >
+            <Image src="/github.png" alt="github" width={50} height={50} />
+          </Link>
+        </footer>
       </body>
     </html>
   );

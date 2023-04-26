@@ -14,17 +14,23 @@ export default async function Home() {
         </span>
         !
       </h1>
-      <p className="mt-3 text-xl text-gray-600">
-        Hello, thank you for visiting my page please take a look at my projects
+      <p className="mt-3 text-xl dark:text-gray-400 light:text-gray-700">
+        Greetings and welcome to my website! I'm excited to share my projects
+        with you and hope you'll find them interesting and inspiring. If you
+        have any questions or would like to collaborate, please feel free to
+        connect with me on LinkedIn or Github using the links below. Thanks for
+        stopping by!
       </p>
-      <h2 className="mt-24 font-bold text-gray-700 text-3xl">My Projects:</h2>
+      <h2 className="mt-8 font-bold dark:text-gray-400 light:text-gray-700 text-3xl">
+        My Projects:
+      </h2>
 
       <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
         {projects.map((project) => (
           <Link
             href={`/projects/${project.slug}`}
             key={project._id}
-            className="border border-gray-500 rounded-lg p-3 hover:shadow-lg hover:shadow-gray-500 flex flex-col items-center"
+            className="border border-gray-500 rounded-lg p-3 transition duration-400 hover:shadow-lg hover:shadow-gray-500 flex flex-col items-center hover:scale-101"
           >
             {project.image && (
               <Image
