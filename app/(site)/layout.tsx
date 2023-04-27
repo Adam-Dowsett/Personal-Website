@@ -15,7 +15,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-screen">
+    <html lang="en">
       <body className="max-w-3xl mx-auto py-5 px-2 flex flex-col min-h-screen">
         <header className="flex items-center justify-between">
           <Link href="/">
