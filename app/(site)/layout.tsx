@@ -16,7 +16,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en" className="h-screen">
-      <body className="max-w-3xl mx-auto py-5 flex flex-col min-h-screen">
+      <body className="max-w-3xl mx-auto py-5 px-2 flex flex-col min-h-screen">
         <header className="flex items-center justify-between">
           <Link href="/">
             <div className="relative">

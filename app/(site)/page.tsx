@@ -17,16 +17,16 @@ export default async function Home() {
         please feel free to connect with me on LinkedIn or Github using the
         links below. Thanks for stopping by!
       </p>
-      <h2 className="mt-8 font-bold dark:text-gray-400 light:text-gray-700 text-3xl">
-        My Projects:
+      <h2 className="mt-8 font-bold dark:text-gray-400 light:text-gray-700 text-3xl text-center">
+        My Projects
       </h2>
 
-      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center">
         {projects.map((project) => (
           <Link
             href={`/projects/${project.slug}`}
             key={project._id}
-            className="border border-gray-500 rounded-lg p-3 transition duration-400 hover:shadow-lg hover:shadow-gray-500 flex flex-col items-center hover:scale-101"
+            className="border border-gray-500 rounded-lg p-3 transition duration-400 hover:shadow-lg hover:shadow-gray-500 flex flex-col items-center hover:scale-101 w-fit h-fit"
           >
             {project.image && (
               <Image
