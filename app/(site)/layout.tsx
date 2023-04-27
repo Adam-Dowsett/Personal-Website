@@ -41,12 +41,7 @@ export default async function RootLayout({
             href="https://www.linkedin.com/in/adam-dowsett-94514b241/"
             className="transition duration-300 transform hover:scale-110"
           >
-            <Image
-              src="/linkedinblue.png"
-              alt="linkedin"
-              width={50}
-              height={50}
-            />
+            <Image src="/linkedIn.png" alt="linkedin" width={50} height={50} />
           </a>
           <a
             href="https://github.com/Adam-Dowsett"
