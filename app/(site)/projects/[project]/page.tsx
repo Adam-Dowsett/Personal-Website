@@ -12,7 +12,7 @@ export default async function Project({ params }: Props) {
   return (
     <div>
       <header className="flex justify-between items-center">
-        <h1 className="font-extrabold bg-gradient-to-r from-red-700 via-orange-500 to-green-300 bg-clip-text text-transparent text-4xl font-extrabold">
+        <h1 className="font-extrabold text-blue-500 text-4xl font-extrabold">
           {project.name}
         </h1>
         <a
