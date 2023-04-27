@@ -2,9 +2,7 @@ export default async function Home() {
   return (
     <div>
       <h1 className="text-7xl font-extrabold text-center">
-        <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
-          About me
-        </span>
+        <span className="text-blue-500">About me</span>
       </h1>
       <p className="mt-6 text-xl dark:text-gray-400 light:text-gray-700">
         Hi, I&apos;m Adam. I&apos;m a software engineer and web developer. I

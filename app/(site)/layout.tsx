@@ -14,17 +14,20 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pages = await getPages();
-
   return (
     <html lang="en" className="h-screen">
-      <body className="max-w-3xl mx-auto py-10 flex flex-col min-h-screen">
+      <body className="max-w-3xl mx-auto py-5 flex flex-col min-h-screen">
         <header className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="bg-gradient-to-r from-red-700 via-orange-500 to-green-300 bg-clip-text text-transparent text-xl font-extrabold"
-          >
-            Home
+          <Link href="/">
+            <div className="relative">
+              <p className="absolute bottom-4 font-serif text-[10px] h-fit w-full bg-[#D6DCDB] dark:bg-black text-center dark:text-gray-200 light:text-gray-600">
+                Adam Dowsett
+              </p>
+              <p className="font-serif text-5xl text-blue-500 text-center">
+                AD
+              </p>
+            </div>
+            {/* <Image src="/logoAdam.png" alt="logo" width={70} height={70} /> */}
           </Link>
           <div className="flex items-center gap-5 text-sm dark:text-gray-200 light:text-gray-600">
             <Link href="/about" className="hover:underline">
@@ -32,7 +35,7 @@ export default async function RootLayout({
             </Link>
           </div>
         </header>
-        <main className="py-10">{children}</main>
+        <main className="py-5">{children}</main>
         <footer className="flex items-center justify-around gap-5 text-sm dark:text-gray-300 light:text-gray-600 mt-auto">
           <a
             href="https://www.linkedin.com/in/adam-dowsett-94514b241/"

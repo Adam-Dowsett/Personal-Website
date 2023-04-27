@@ -8,11 +8,7 @@ export default async function Home() {
   return (
     <div>
       <h1 className="text-7xl font-extrabold">
-        Hello I&apos;m{" "}
-        <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
-          Adam
-        </span>
-        !
+        Hello I&apos;m <span className="text-blue-500">Adam</span>!
       </h1>
       <p className="mt-3 text-xl dark:text-gray-400 light:text-gray-700">
         Greetings and welcome to my website! I&apos;m excited to share my
@@ -41,9 +37,7 @@ export default async function Home() {
                 className="object-cover rounded-lg border border-gray-500"
               />
             )}
-            <div className="font-extrabold bg-gradient-to-r from-red-700 via-orange-500 to-green-300 bg-clip-text text-transparent">
-              {project.name}
-            </div>
+            <div className="font-extrabold text-blue-500">{project.name}</div>
           </Link>
         ))}
       </div>
