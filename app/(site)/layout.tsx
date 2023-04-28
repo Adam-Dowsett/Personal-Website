@@ -20,7 +20,7 @@ export default async function RootLayout({
         <header className="flex items-center justify-between">
           <Link href="/">
             <div className="relative">
-              <p className="absolute bottom-[15px] font-serif text-[10px] h-fit w-full bg-[#D6DCDB] dark:bg-black text-center dark:text-gray-200 light:text-gray-600">
+              <p className="absolute bottom-[15px] font-serif text-[10px] h-fit w-[80px] bg-[#D6DCDB] dark:bg-black text-center dark:text-gray-200 light:text-gray-600">
                 Adam Dowsett
               </p>
               <p className="font-serif text-[50px] text-blue-500 text-center h-[60px]">
