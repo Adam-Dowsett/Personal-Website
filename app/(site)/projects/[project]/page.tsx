@@ -15,15 +15,6 @@ export default async function Project({ params }: Props) {
         <h1 className="font-extrabold text-blue-500 text-4xl font-extrabold">
           {project.name}
         </h1>
-        <a
-          href={project.url}
-          title="Visit the project"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap"
-        >
-          View Project
-        </a>
       </header>
       <Image
         src={project.image}
