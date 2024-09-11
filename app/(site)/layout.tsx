@@ -29,11 +29,6 @@ export default async function RootLayout({
             </div>
             {/* <Image src="/logoAdam.png" alt="logo" width={70} height={70} /> */}
           </Link>
-          <div className="flex items-center gap-5 text-sm dark:text-gray-200 light:text-gray-600">
-            <Link href="/about" className="hover:underline">
-              About
-            </Link>
-          </div>
         </header>
         <main className="py-5">{children}</main>
         <footer className="flex items-center justify-around gap-5 text-sm dark:text-gray-300 light:text-gray-600 mt-auto">
